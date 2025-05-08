@@ -9,3 +9,12 @@
         return input.toLowerCase();
     }
 }
+
+
+type book = {title : string; rating : number}[]
+
+
+function filterByRating(items : book) : book{
+    let obj = items.filter(item => item.rating >= 4.0);
+    return obj;
+}
